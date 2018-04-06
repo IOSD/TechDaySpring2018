@@ -1,144 +1,636 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
+
+<!-- Mirrored from sitetemplate.demo.ithemeslab.com/eventex/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Apr 2018 10:55:32 GMT -->
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
-	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
-	<title>Local index - HTTrack Website Copier</title>
-  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<style type="text/css">
-	<!--
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="author" content="iThemesLab">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: #77b;
-}
-body, td {
-	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	}
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
 
-#subTitle {
-	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
-	}
+    <!--All Css Here-->
 
-#siteNavigation a, #siteNavigation .current {
-	font-weight: bold;  color: #448;
-	}
-#siteNavigation a:link    { text-decoration: none; }
-#siteNavigation a:visited { text-decoration: none; }
-
-#siteNavigation .current { background-color: #ccd; }
-
-#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
-
-
-a:link    { text-decoration: underline;  color: #00f; }
-a:visited { text-decoration: underline;  color: #000; }
-a:hover   { text-decoration: underline;  color: #c00; }
-a:active  { text-decoration: underline; }
-
-#pageContent {
-	clear: both;
-	border-bottom: 6px solid #000;
-	padding: 10px;  padding-top: 20px;
-	line-height: 1.65em;
-	background-image: url(backblue.gif);
-	background-repeat: no-repeat;
-	background-position: top right;
-	}
-
-#pageContent, #siteNavigation {
-	background-color: #ccd;
-	}
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!--Font-Awesome Css-->
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+    <!--Flaticon Css-->
+    <link rel="stylesheet" href="assets/css/vendor/flaticon.css">
+    <!--Owl-Carousel Css-->
+    <link rel="stylesheet" href="assets/css/vendor/owl.carousel.min.css">
+    <!--Owl Theme Default-->
+    <link rel="stylesheet" href="assets/css/vendor/owl.theme.default.min.css">
+    <!--Animate Css-->
+    <link rel="stylesheet" href="assets/css/vendor/animate.css">
+    <!--Jquery Ui Css-->
+    <link rel="stylesheet" href="assets/css/vendor/jquery-ui.min.css">
+    <!--Lightbox Css-->
+    <link rel="stylesheet" href="assets/css/vendor/lightbox.css">
+    <!--Style Css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Responsive Css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!--Modernizr Css-->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
 
-.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
-
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
-
-h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
-
-.blak { background-color: #000; }
-.hide { display: none; }
-.tableWidth { min-width: 400px; }
-
-.tblRegular       { border-collapse: collapse; }
-.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
-.tblHeaderColor, .tblHeaderColor td { background: #99c; }
-.tblNoBorder td   { border: 0; }
-
-
-// -->
-</style>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
-	<tr>
-	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
-	</tr>
-</table>
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
-<tr class="blak">
-<td>
-	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
-	<tr>
-	<td colspan="6"> 
-		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
-		<tr> 
-		<td id="pageContent"> 
-<!-- ==================== End prologue ==================== -->
+<body>
+    <!--Preloder-->
+    <div class='loader'>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--text'></div>
+    </div>
 
-	<meta name="generator" content="HTTrack Website Copier/3.x">
-	<TITLE>Local index - HTTrack</TITLE>
-</HEAD>
-<BODY>
-<H1 ALIGN=Center>Index of locally available sites:</H1>
-	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
-		<TR>
-			<TD BACKGROUND="fade.gif">
-				&middot;
-					<A HREF="sitetemplate.demo.ithemeslab.com/eventex/demo/home-2.html">
-						Home 2
-					</A>		
-			</TD>
-		</TR>
-	</TABLE>
-	<BR>
-	<BR>
-	<BR>
-  	<H6 ALIGN="RIGHT">
-	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
-	</H6>
-	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<!-- Thanks for using HTTrack Website Copier! -->
-	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=sitetemplate.demo.ithemeslab.com/eventex/demo/home-2.html">
+    <!--Main Container Start Here-->
+    <div class="main-container">
+        <!--Header Start Here-->
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="brand-logo">
+                            <a class="eventex-brand" href="index.html"><img src="assets/img/logo/logo-3.png" alt=""></a>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                    <div class="col-lg-8">
+                        <nav class="navbar navbar-expand-lg">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                          </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#">Events</a>
+                                        <ul class="dropdown-menu animation  slideUpIn">
+                                            <li>
+                                                <a href="event-schedule.html">Event Schedule</a>
+                                            </li>
+                                            <li>
+                                                <a href="event-table.html">Event Table</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- /col end-->
+                    <div class="col-lg-2 d-none d-lg-block">
+                        <ul>
+                            <li class="header-ticket">
+                                <a class="pr-0" href="#">Buy Ticket</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /col end-->
+                </div>
+                <!-- /row end-->
+            </div>
+            <!-- container end-->
+        </header>
+        <!--Header End Here-->
+
+        <!--Hero Banner Area Start Here-->
+        <div class="hero-banner-area hero-bg-4 parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="banner-content">
+                            <h1>TechDay</h1>
+                            <h2>Spring Edition </h2>
+                            <p>3rd May 2018, Delhi Technological University</p>
+                            <div class="primary-btn">
+                                <a href="#" class="btn-primary">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                </div>
+                <!-- /row end-->
+            </div>
+            <!-- /container end-->
+        </div>
+        <!--Hero Banner Area End Here-->
+
+        <!--Conference Synopsis Area Start Here-->
+        <div class="conference-synopsis-area pad100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 xs-mb40">
+                        <img class="img-fluid mx-auto d-block" src="assets/img/mockup/vector-2.png" alt="">
+                    </div>
+                    <!-- /.col end-->
+                    <div class="col-lg-7">
+                        <div class="inner-content">
+                            <div class="section-title">
+                                <div class="title-text pl">
+                                    <h2>OUR ODYSSEY....</h2>
+                                </div>
+                            </div>
+                            <table id="ody_tab">
+                                <tr style="text-align: center; height: 100px;">
+                                    <th>Small Beginnings</th>
+                                    <th>Achieving the Granduer</th>
+                                    <th>Exponential Growth</th>
+                                </tr>
+                                <tr>
+                                    <td style="border-right: 1px solid #ccc">"A journey of a thousand miles starts witha single step". We started off as a group of android techies with our common passion for development</td>
+                                    <td style="border-right: 1px solid #ccc">Launched a society of Development Enthusiasts, who pledged to revamp the technological milieu of the countary, overt as software developers DTU</td>
+                                    <td>Notoriously famous as globetrotters with chapters in numerous colleges, spreading the development spirit, as IOSD - International Organisation Of Software Development </td>
+                                </tr>
+                            </table>
+                            <style type="text/css">
+                                #ody_tab>tbody>tr>td{
+                                    background-color: #eee;
+                                    padding:5px;
+                                }
+                                #ody_tab{
+                                    background-color: #ccc; 
+                                }
+                            </style>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                </div>
+                <!-- /row end-->
+            </div>
+            <!-- /container end-->
+        </div>
+        <!--Conference Synopsis Area End Here-->
+
+        <!--Event Schedule Area Start Here-->
+        <div class="event-schedule-area-two bg-color pad100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <div class="title-text">
+                                <h2>Events</h2>
+                            </div>
+                            <p>To the destinies we adore, I won't walk, I will Code </p>
+                        </div>
+                    </div>
+                    <!-- /.col end-->
+                </div>
+                <!-- row end-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="nav custom-tab" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-taThursday" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">The Code Saga</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Fit The Line </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel">
+                                <div class="table-responsive">
+                                    <h6>where Brewing Coffee won't help</h6>
+                                    <h2>Monthly Coding Be The Best</h2>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="table-responsive">
+                                    <h6>Workshops so intellectual, Innovation will pour out.</h6>
+                                    <p>
+                                        Our Crowning day of the TechDay, Spring Edition. Quedar is the most prestigious worekshop that students are eager to attend. This time back with industry leaders to guide on the funcdamentals on machine learning. </p>
+                                        <p>
+                                        You wont be able to sleep even if you wanted to </p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                </div>
+                <!-- /row end-->
+            </div>
+            <!-- /container end-->
+        </div>
+        <!--Event Schedule Area End Here-->
 
 
-<!-- ==================== Start epilogue ==================== -->
-		</td>
-		</tr>
-		</table>
-	</td>
-	</tr>
-	</table>
-</td>
-</tr>
-</table>
+        <!--Our Sponsers Area Start Here-->
+        <div class="our-sponsers-area-tow pad100 bg-color" style="background-color: white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <div class="title-text mb50 xs-mb40">
+                                <h2>Our Sponsers</h2>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                </div>
+                <!-- /row end-->
+                <div class="row">
+                    <div class="sponsers-active owl-carousel owl-theme">
+                        <div class="col-lg-12">
+                            <div class="single-sponsers">
+                                <a href="#"><img src="assets/img/sponsers/1.png" alt=""></a>
+                            </div>
+                            <div class="single-sponsers">
+                                <a href="#"><img src="assets/img/sponsers/2.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="single-sponsers">
+                                <a href="#"><img src="assets/img/sponsers/3.png" alt=""></a>
+                            </div>
+                            <div class="single-sponsers">
+                                <a href="#"><img src="assets/img/sponsers/4.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="single-sponsers">
+                                <a href="#"><img src="assets/img/sponsers/5.png" alt=""></a>
+                            </div>
+                            <div class="single-sponsers">
+                                <a href="#"><img src="assets/img/sponsers/6.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="single-sponsers">
+                                <a href="#"><img src="assets/img/sponsers/7.png" alt=""></a>
+                            </div>
+                            <div class="single-sponsers">
+                                <a href="#"><img src="assets/img/sponsers/8.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="single-sponsers">
+                                <a href="#"><img src="assets/img/sponsers/9.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /row end-->
+            </div>
+            <!-- /container end-->
+        </div>
+        <!--Our Sponsers Area End Here-->
 
-<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
-	<tr>
-	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
-	</tr>
-</table>
+        <!--Pricing Tables Area Start Here-->
+        <div class="pricing-tables-area pad100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <div class="title-text mb50">
+                                <h2>Become Our Sponser </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                </div>
+                <!-- /row end-->
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div class="pricing-box xs-mb30">
+                            <div class="icons">
+                                <img src="assets/img/pricing/1.png" alt="">
+                            </div>
+                            <div class="pricing-title">Kilo</div>
+                            <h3> What you get </h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li>1. Brand Promotion on Website, Facebook, Twitter, Instagram</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-header">
+                                <div class="price-value">
+                                    <span class="amount">
+                                        <span class="currency">&#8377;</span>25,000&#8377;
+                                    </span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div class="pricing-box xs-mb30">
+                            <div class="icons">
+                                <img src="assets/img/pricing/2.png" alt="">
+                            </div>
+                            <div class="pricing-title">Mega</div>
+                            <h3> What you get </h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li>1. Brand Promotion on Website, Facebook, Twitter, Instagram</li>
+                                    <li>2. Logo on T-Shirts, Posters, Banners, Conference Kit </li>
+                                </ul>
+                            </div>
+                            <div class="pricing-header">
+                                <div class="price-value">
+                                    <span class="amount">
+                                        <span class="currency">&#8377;</span>50,000
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div class="pricing-box">
+                            <div class="icons">
+                                <img src="assets/img/pricing/3.png" alt="">
+                            </div>
+                            <div class="pricing-title">Giga</div>
+                            <h3> What you get </h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li>1. Brand Promotion on Website, Facebook, Twitter, Instagram</li>
+                                    <li>2. Logo on T-Shirts, Posters, Banners, Conference Kit </li>
+                                    <li>3. Promotion with media partner.</li>
+                                    <li>4. Get Featured in Video Teasers & Aftermovie</li>
+                                    <li>5. Organise Workshop for 10 minutes</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-header">
+                                <div class="price-value">
+                                    <span class="amount">
+                                        <span class="currency">&#8377;</span>1,00,000
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                </div>
+                <!-- /row end-->
+                <br /> <br />
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div class="pricing-box xs-mb30">
+                            <div class="icons">
+                                <img src="assets/img/pricing/1.png" alt="">
+                            </div>
+                            <div class="pricing-title">Tera</div>
 
+                            <h3> What you get </h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li>1. Brand Promotion on Website, Facebook, Twitter, Instagram</li>
+                                    <li>2. Logo on T-Shirts, Posters, Banners, Conference Kit </li>
+                                    <li>3. Promotion with media partner.</li>
+                                    <li>4. Get Featured in Video Teasers & Aftermovie</li>
+                                    <li>5. Organise worekshope for 15 minutes</li>
+                                    <li>6. Send Mentors </li>
+                                    <li>7. Keynote speech in Synergy 18</li>
+                                    <li>8. Recruting </li>
+                                </ul>
+                            </div>
+                            <div class="pricing-header">
+                                <div class="price-value">
+                                    <span class="amount">
+                                        <span class="currency">&#8377;</span>2,50,000
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                        <div class="pricing-box xs-mb30">
+                            <div class="icons">
+                                <img src="assets/img/pricing/2.png" alt="">
+                            </div>
+                            <div class="pricing-title">Title Sponser </div>
+                            <h3> What you get </h3>
+                            <div class="pricing-content">
+                                <ul>
+                                    <li>1. Brand Promotion on Website, Facebook, Twitter, Instagram</li>
+                                    <li>2. Logo on T-Shirts, Posters, Banners, Conference Kit </li>
+                                    <li>3. Promotion with media partner.</li>
+                                    <li>4. Get Featured in Video Teasers & Aftermovie</li>
+                                    <li>5. Organise worekshope for 30 minutes</li>
+                                    <li>6. Send Mentors </li>
+                                    <li>7. Keynote speech in Synergy 18</li>
+                                    <li>8. Recruting </li>
+                                </ul>
+                            </div>
+                            <div class="pricing-header">
+                                <div class="price-value">
+                                    <span class="amount">
+                                        <span class="currency">&#8377;</span>5,00,000
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /container end-->
+        </div>
+        <!--Pricing Tables Area End Here-->
+
+        <!--Counter Up Area Start Here-->
+        <div class="counter-up-area pad100 bg-counter parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                        <div class="single-counter xs-mb40">
+                            <div class="count-content">
+                                <span class="count">80</span>
+                                <p>Countries</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                        <div class="single-counter xs-mb40">
+                            <div class="count-content">
+                                <span class="count">120</span>
+                                <p>Programs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+                        <div class="single-counter xs-mb40">
+                            <div class="count-content">
+                                <span class="count">65</span>
+                                <p>Speakers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                    <div class="col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-3">
+                        <div class="single-counter">
+                            <div class="count-content">
+                                <span class="count">30</span>
+                                <p>Sponsors</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                </div>
+                <!-- /row end-->
+            </div>
+            <!-- /container end-->
+        </div>
+        <!--Counter Up Area End Here-->
+
+        <!--Contact Us Area Start Here-->
+        <div class="contact-us-area-two pad-top100 bg-contact parallax no-attm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center">
+                            <div class="title-text mb50">
+                                <h2>Contact Us</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                </div>
+                <!-- /row end-->
+                <div class="row">
+                     <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="icon-box xs-mb30">
+                            <div class="box-icons">
+                                <img src="assets/img/others/2.png" alt="">
+                            </div>
+                            <div class="inner-content">
+                                <h3 style="color: yellow">Location</h3>
+                                <div style="color: white">
+                                <p>Delhi Technological University</p>
+                                <p>Shahbad Daulatpur</p>
+                                <p>Main Bawana Road, Rohini, Delhi</p>
+                                <p>110042</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                    <div class="col-lg-8 pl-0">
+                        <!--Google Map Start Here-->
+                        <div class="gmap">
+                            <div id="googlemap"></div>
+                        </div>
+                        <!--Google Map End Here-->
+                    </div>
+                    <!-- /col end-->
+                </div>
+                <!-- /row end-->
+            </div>
+            <!-- /container end-->
+        </div>
+        <!--Contact Us Area End Here-->
+
+        <!--Footer Area Start Here-->
+        <div class="footer-area ptb bg-footer parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="am">
+                            <div class="f-logo">
+                                <img src="assets/img/logo/logo-2.png" alt="">
+                            </div>
+                            <div class="border-right"></div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                    <div class="col-lg-6 offset-1">
+                        <div class="f-content">
+                            <div class="inner-content">
+                                <div class="f-icon">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <p>Delhi Technological University</p>
+                                <p>Shahbad Daulatpur</p>
+                                <p>Main Bawana Road, Rohini, Delhi</p>
+                                <p>110042</p>
+                            </div>
+                            
+                            <div class="sub-btn">
+                                <input type="text" placeholder="Your email address ">
+                                <button type="submit">Subscribe</button>
+                            </div>
+                            <div class="f-social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-camera"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /col end-->
+                </div>
+                <!-- /row end-->
+            </div>
+            <!-- /container end-->
+        </div>
+        <!--Footer Area End Here-->
+    </div>
+    <!--Main Container End Here-->
+    <!--All Js Here-->
+    <!-- Google Map js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlUJtsIi_FRurx0i2WUGoxf_KaNoHmc4o"></script>
+    <script src="assets/js/vendor/map.js"></script>
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+    <!--Migrate Js-->
+    <script src="assets/js/vendor/jquery-migrate.js"></script>
+    <!--Popper Js-->
+    <script src="assets/js/vendor/popper-1.12.9.min.js"></script>
+    <!--Bootstrap Js-->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <!--Owl-Carousel Js-->
+    <script src="assets/js/vendor/owl.carousel.min.js"></script>
+    <!--Counter-Up Js-->
+    <script src="assets/js/vendor/jquery.counterup.min.js"></script>
+    <!--Waypoints Js-->
+    <script src="assets/js/vendor/waypoints-jquery.js"></script>
+    <!--Lightbox Js-->
+    <script src="assets/js/vendor/lightbox.js"></script>
+    <!--Appear Js-->
+    <script src="assets/js/vendor/jquery.appear.js"></script>
+    <!--Jquery Ui Js-->
+    <script src="assets/js/vendor/jquery-ui.min.js"></script>
+    <!--Wow Js-->
+    <script src="assets/js/vendor/wow.min.js"></script>
+    <!--Plugins Js-->
+    <script src="assets/js/vendor/plugins.js"></script>
+
+    <!-- template main js file -->
+    <script src="assets/js/main.js"></script>
 </body>
 
+
+<!-- Mirrored from sitetemplate.demo.ithemeslab.com/eventex/demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 05 Apr 2018 10:55:37 GMT -->
 </html>
-
-
